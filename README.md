@@ -1,5 +1,4 @@
 # 使用keras实现走神司机检测
--
 
 环境参考：
 
@@ -8,12 +7,11 @@
 * keras
 * opencv3
 
--
 #### 数据
 数据集来自 kaggle 的一个竞赛：[state-farm-distracted-driver-detection](https://www.kaggle.com/c/state-farm-distracted-driver-detection/data)
 
-下载下来数据后解压缩，imgs文件夹中包含了train、test两个文件夹，而train文件夹中有c0~c9这10个文件夹。
-训练集有24000+张图片，26个driver(subject)，10种行为(c0~c9)。测试集有70000+张图片。
+下载下来数据后解压缩，imgs文件夹中包含了train、test两个文件夹，而train文件夹中有c0\~c9这10个文件夹。
+训练集有24000+张图片，26个driver(subject)，10种行为(c0\~c9)。测试集有70000+张图片。
 
 训练集数据分布：
 ![](./Figure_0.png)
@@ -21,7 +19,6 @@
 ![](./Figure_1.png)
 每个driver的类别分布情况：一共有26个driver，除了p051、p050、p072的两个类别最大差超过了50之外，其它driver各个类别的数量差距不大，所以可以认为是平衡的。
 
--
 
 #### 运行 
 程序入口是training.h：
