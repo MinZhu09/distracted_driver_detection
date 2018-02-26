@@ -591,7 +591,7 @@ if __name__ == '__main__':
                           image_size=(224, 224),
                           batch_size=128, bf_epoch=100, ft_epoch=35,
                           modelStr='_gap_ver4_',
-                          # preprocess=resnet50.preprocess_input
+                          preprocess=resnet50.preprocess_input
                           )
 
     # we choose to train the top 5 inception blocks   #165 197 229 249,#280 # 311层
